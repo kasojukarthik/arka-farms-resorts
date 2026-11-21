@@ -297,6 +297,12 @@ body.ready .hero .in-i{opacity:1;transform:none}
 .leader:hover{border-color:var(--gold);transform:translateY(-5px)}
 .mono{width:84px;height:84px;margin:0 auto 1.3rem;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font:600 1.5rem var(--disp);color:var(--gold2);position:relative}
 .mono::after{content:"";position:absolute;inset:-7px;border:1px solid var(--line);border-radius:50%}
+.ph{width:132px;height:132px;margin:0 auto 1.3rem;border-radius:50%;border:1px solid var(--gold);padding:5px;position:relative;box-sizing:content-box}
+.ph::after{content:"";position:absolute;inset:-9px;border:1px solid var(--line);border-radius:50%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:50%}
+.ph.mono{display:grid;place-items:center;width:142px;height:142px;padding:0;font-size:2.2rem}
+.ph.mono::after{inset:-9px}
+.pts{list-style:none;margin:.9rem 0 0;padding:0;font-style:italic;color:var(--cream);opacity:.85;line-height:1.8}
 .leader h3{margin-bottom:.4rem}
 .leader .role{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
 .leader .yrs{margin:.8rem 0 0}
@@ -583,7 +589,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1200;b
     <div class="sec-head center">
       <p class="eyebrow rv">The Resort</p>
       <h2 id="h-res" class="foil mk"><span>AURA — where weekends become occasions</span></h2>
-      <p class="rv" style="--d:.15s">A 33.3-Guntas resort precinct with a signature clubhouse, pools, event lawn and sports court — hospitality, on your doorstep.</p>
+      <p class="rv" style="--d:.15s">A 33.3-Guntas resort precinct with a signature clubhouse, pools, event lawn, sports court and indoor games — hospitality, on your doorstep.</p>
     </div>
     <div class="frame resort-hero img-rv">
       <button class="zoomable" data-lb="images/dark-clubhouse.jpg" data-cap="AURA clubhouse" aria-label="Enlarge: AURA clubhouse"><img src="images/dark-clubhouse.jpg" alt="AURA clubhouse glowing at dusk" loading="lazy"></button>
@@ -598,9 +604,12 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1200;b
       <div class="frame img-rv" style="--d:.2s"><button class="zoomable" data-lb="images/lounge-premium.jpg" data-cap="Premium lounge" aria-label="Enlarge: premium lounge"><img src="images/lounge-premium.jpg" alt="Premium lounge" loading="lazy"><span class="cap">Premium lounge</span></button></div>
       <div class="frame img-rv"><button class="zoomable" data-lb="images/lounge-palms.jpg" data-cap="Palm lounge" aria-label="Enlarge: palm lounge"><img src="images/lounge-palms.jpg" alt="Lounge among palms" loading="lazy"><span class="cap">Palm lounge</span></button></div>
       <div class="frame img-rv" style="--d:.1s"><button class="zoomable" data-lb="images/landscape-path.jpg" data-cap="Landscape path" aria-label="Enlarge: landscape path"><img src="images/landscape-path.jpg" alt="Landscaped garden path" loading="lazy"><span class="cap">Landscape path</span></button></div>
+      <div class="frame img-rv"><button class="zoomable" data-lb="images/amenities/table-tennis.jpg" data-cap="Table tennis" aria-label="Enlarge: table tennis"><img src="images/amenities/table-tennis.jpg" alt="Indoor table tennis tables" loading="lazy"><span class="cap">Table tennis</span></button></div>
+      <div class="frame img-rv" style="--d:.1s"><button class="zoomable" data-lb="images/amenities/carrom.jpg" data-cap="Carrom" aria-label="Enlarge: carrom"><img src="images/amenities/carrom.jpg" alt="Carrom board" loading="lazy"><span class="cap">Carrom</span></button></div>
+      <div class="frame img-rv" style="--d:.2s"><button class="zoomable" data-lb="images/amenities/pickleball.jpg" data-cap="Pickleball" aria-label="Enlarge: pickleball"><img src="images/amenities/pickleball.jpg" alt="The on-site indoor pickleball court" loading="lazy"><span class="cap">Pickleball</span></button></div>
       <div class="frame wide img-rv" style="--d:.2s"><button class="zoomable" data-lb="images/convention-hall-day.jpg" data-cap="Convention hall" aria-label="Enlarge: convention hall"><img src="images/convention-hall-day.jpg" alt="Convention hall by day" loading="lazy"><span class="cap">Convention hall</span></button></div>
     </div>
-    <div class="amen rv"><span class="chip">Clubhouse</span><span class="chip">Swimming pools</span><span class="chip">Event lawn</span><span class="chip">Sports court</span><span class="chip">Lounges</span><span class="chip">Convention hall</span></div>
+    <div class="amen rv"><span class="chip">Clubhouse</span><span class="chip">Swimming pools</span><span class="chip">Event lawn</span><span class="chip">Sports court</span><span class="chip">Table tennis</span><span class="chip">Carrom</span><span class="chip">Pickleball</span><span class="chip">Lounges</span><span class="chip">Convention hall</span></div>
     <p class="note center" style="margin-top:1.4rem">Images are artist's impressions.</p>
     <div class="center rv" style="margin-top:2rem"><a class="btn" href="#enquire">Enquire about the Resort</a></div>
   </div>
@@ -680,8 +689,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1200;b
       <h2 id="h-lead" class="foil mk"><span>The people behind Arka</span></h2>
     </div>
     <div class="leaders" data-stagger>
-      <div class="leader rv"><div class="mono" aria-hidden="true">D</div><h3>Mr. Devendar</h3><div class="role">Real Estate Marketing Director</div><p class="yrs">15+ years in real estate.</p></div>
-      <div class="leader rv"><div class="mono" aria-hidden="true">RP</div><h3>Dr. R. Ravi Prakash</h3><div class="role">Construction Professional</div><p class="yrs">15+ years in construction.</p></div>
+      <div class="leader rv"><div class="ph"><img src="images/people/devendar.jpg" alt="Portrait of Mr. Devendar" loading="lazy"></div><h3>Mr. Devendar</h3><div class="role">Real Estate Marketing Director</div><p class="yrs">15+ years in real estate.</p><ul class="pts"><li>Customer-centric approach</li><li>Transparent dealings</li><li>Strategic positioning</li></ul></div>
+      <div class="leader rv"><div class="ph mono" aria-hidden="true">RP</div><h3>Dr. R. Ravi Prakash</h3><div class="role">Construction Professional</div><p class="yrs">15+ years in construction.</p><ul class="pts"><li>Technical expertise</li><li>Execution excellence</li><li>Durable standards</li></ul></div>
     </div>
   </div>
 </section>
